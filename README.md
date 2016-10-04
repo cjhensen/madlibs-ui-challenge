@@ -24,7 +24,8 @@ judged on your use of it.
 7. To submit your challenge push your updates to your forked repo
 
 This is definitely the preferred option. Please feel free to reach out if you
-have any questions at all about getting this up and running.
+have any questions at all about getting this up and running. I'm happy
+spending a little time on the phone if necessary
 
 ### If you cannot install Node.js (the lo-fi option)
 1. Fork this repo https://help.github.com/articles/fork-a-repo/
