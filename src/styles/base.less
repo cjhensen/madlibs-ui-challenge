@@ -1,0 +1,50 @@
+/* 
+Base Application Styles
+*/
+
+.madlib-line {
+  display: block;
+  height: 20px;
+}
+
+.madlib-line.last-of-chunk + .madlib-line {
+  display: inline-block;
+}
+
+.user-submitted-value {
+  text-decoration: underline;
+  .something {
+    font-size: 2pt;
+  }
+}
+
+
+body {
+  background: @color-depth2-background;
+}
+
+
+// Headings
+h1 { 
+  .flo-typography-larger; 
+  text-align: center;
+}
+
+h2 { 
+  .flo-typography-large; 
+  text-align: center;
+}
+
+
+// Main div
+.main {
+  max-width: @width-contentArea;
+  margin: 0 auto 100px auto;
+  padding: 0 32px;
+}
+.madlib-form form,
+.submitted-madlib {
+  border-radius: @border-radius;
+  background: @color-depth1-background;
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.08);
+}

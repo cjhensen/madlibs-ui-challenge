@@ -1,8 +1,19 @@
 // attempt to reset browser differences in default CSS
 require('normalize.css/normalize.css');
 // this file is where styles should go
-require('styles/App.css');
-require('styles/App.scss');
+// require('styles/App.css');
+// require('styles/App.scss'); Using less, don't need this
+require('styles/App.less');
+
+// Not necessary to require these because of import statements in App.less
+// require('styles/utilities.less');
+// require('styles/variables.less');
+// require('styles/animations.less');
+// require('styles/base.less');
+// require('styles/components/buttons.less');
+// require('styles/components/forms.less');
+// require('styles/components/madLibForm.less');
+// require('styles/components/submittedMadLibs.less');
 
 // Flocabulary uses React extensively. This exercise is built with it
 // but it is not required knowledge. Ideally, you will not have to

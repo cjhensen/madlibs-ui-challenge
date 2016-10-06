@@ -1,0 +1,32 @@
+/* 
+Base button styles (from Flocab style guide)
+*/
+
+.flo-button(@padding) {
+  padding: @padding;
+  border-radius: @border-radius;  
+  transition: all .2s ease;
+  background: @color-flocab-blue;
+  box-shadow: 0 1px 4px rgba(0,0,0,.15);
+  outline: none;
+  .flo-typography-base;
+  color: #fff;
+}
+
+// Primary button styles, can be used as a mixin
+.flo-button-primary(@padding: 16px 32px;) {
+  text-shadow: 0 1px 1px rgba(0,0,0,.25);
+  border: none;
+  .flo-button(@padding);
+
+  &:hover {
+      background: #019fee;
+      box-shadow: 0 4px 10px rgba(0,0,0,.25);
+      cursor: pointer;
+  }
+}
+
+// Primary small button styles, can be used as a mixin
+.flo-button-primary-small {
+  .flo-button-primary(8px 16px);
+}

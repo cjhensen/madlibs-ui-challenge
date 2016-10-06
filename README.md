@@ -1,3 +1,22 @@
+## LESS File Structure
+1. App.less
+  * The main LESS file for the app. Imports all other LESS files
+2. utilities.less
+  * Miscellaneous mixins
+3. variables.less
+  * Colors, layout sizes, tyopgraphy from Flocab style guide
+4. base.less
+  * Base app styles (headings, body, background)
+5. buttons.less
+  * Base button styles from Flocab style guide
+6. forms.less
+  * Base form styles from Flocab style guide
+7. madLibForm.less
+  * MadLib Form View
+8. submittedMadLibs.less
+  * Submitted Mad Lib form View
+
+
 ## Thank you for accepting Flocabulary's UI/UX/CSS challenge!
 
 At Flocabulary, we strive to provide rich educational materials that are also elegant, intuitive

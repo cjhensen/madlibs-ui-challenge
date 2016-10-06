@@ -1,0 +1,34 @@
+/* 
+Keyframes and animations
+*/
+
+.keyframes(@animationName; @arguments) {
+  @-webkit-keyframes @animationName { @arguments(); }
+  @-moz-keyframes @animationName { @arguments(); }
+  @keyframes @animationName { @arguments(); }
+}
+
+// Pass in one of the keyframe animations below with properties to use as a mixin
+.animation(@arguments) {
+  .vendorPrefix(animation, @arguments);
+}
+
+// Creates slide-in-right animation
+.keyframes(slide-in-right;{
+  from {
+    .vendorPrefix(transform, translateX(500px));
+  }
+  to {
+    .vendorPrefix(transform, translateX(0));
+  }
+});
+
+// Creates fade-in animation
+.keyframes(fade-in;{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+});

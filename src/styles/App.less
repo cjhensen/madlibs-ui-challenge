@@ -1,17 +1,8 @@
-/* Base Application Styles */
-
-.madlib-line {
-  display: block;
-  height: 20px;
-}
-
-.madlib-line.last-of-chunk + .madlib-line {
-  display: inline-block;
-}
-
-.user-submitted-value {
-  text-decoration: underline;
-  .something {
-    font-size: 2pt;
-  }
-}
+@import "utilities.less";
+@import "variables.less";
+@import "animations.less";
+@import "base.less";
+@import "components/buttons.less";
+@import "components/forms.less";
+@import "components/madLibForm.less";
+@import "components/submittedMadLibs.less";

@@ -1,0 +1,44 @@
+/* 
+Styling for the submittedMadLibs view
+*/
+
+.submitted-madlib-container {
+
+  .animation(slide-in-right .8s);
+
+  button.back-button {
+    .flo-button-primary-small;
+    margin-top: 16px;
+  }
+
+  .submitted-madlib {
+    padding: 32px;
+    margin-top: 16px;
+
+    .madlib-line {
+      .flo-typography-smaller;
+
+      .user-submitted-value {
+        .flo-typography-small;
+        font-weight: bold;
+        color: @color-goodGreen;
+        text-decoration: none;
+      }
+    }
+    // Selecting all of the "number" headlines
+    .madlib-line:nth-child(2),
+    .madlib-line:nth-child(6),
+    .madlib-line:nth-child(10),
+    .madlib-line:nth-child(14),
+    .madlib-line:nth-child(18),
+    .madlib-line:nth-child(28),
+    .madlib-line:nth-child(31),
+    .madlib-line:nth-child(34),
+    .madlib-line:nth-child(38),
+    .madlib-line:nth-child(41) {
+      span:first-child {
+        .flo-typography-base;
+      }
+    }
+  }
+}

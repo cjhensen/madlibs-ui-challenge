@@ -1,0 +1,9 @@
+/* 
+Utility mixins
+*/
+
+.vendorPrefix(@property; @rest...) {
+  -webkit-@{property}: @rest;
+     -moz-@{property}: @rest;
+          @{property}: @rest;
+}

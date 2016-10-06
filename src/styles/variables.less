@@ -1,0 +1,66 @@
+/* 
+Variables and fonts (from Flocab style guide)
+*/
+
+//Colors
+// Text
+@color-text: #181828;
+@color-text-light: #979799;
+@color-active: #018ED5;
+@color-disabled: #D3D3D3;
+
+// Utilities
+@color-border: #E6E6E6;
+@color-border-dark: #222222;
+@color-border-light: #EEEEEE;
+@color-goodGreen: #55A003;
+@color-badRed: #DD2D18;
+@color-favoriteYellow: #FFC53B;
+
+// Background
+@color-depth1-background: #FFF;
+@color-depth2-background: #F2F2F2;
+@color-depth2-background: #E6E6E6;
+@color-depth3-background: #181828;
+
+// Brand
+@color-flocab-orange: #F65412;
+@color-flocab-green: #55A003;
+@color-flocab-blue: #018ED5;
+@color-flocab-purple: #6C4B84;
+@color-flocab-darkBase: #181828;
+@color-flocab-darkBase-grey: #52525E;
+
+// Layout
+@width-fullPage: 1024px;
+@width-contentArea: 794px;
+@width-sidebar: 240px;
+@layout-bodyMainHeight: 776px;
+
+@border-radius: 3px;
+
+// Font sizes
+// Base font properties
+.flo-typography(@font-size; @font-weight: normal;) {
+  font-size: @font-size;
+  font-weight: @font-weight; // defaults to normal unless specified
+  color: @color-text;
+  line-height: 1em;
+}
+
+// Named font properties, can be used as mixins
+.flo-typography-larger {
+  .flo-typography(32px; bold);
+}
+.flo-typography-large {
+  .flo-typography(24px);
+}
+.flo-typography-base {
+  .flo-typography(18px);
+}
+.flo-typography-small {
+  .flo-typography(16px);
+}
+.flo-typography-smaller {
+  .flo-typography(14px);
+}
