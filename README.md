@@ -5,15 +5,17 @@
   * Miscellaneous mixins
 3. variables.less
   * Colors, layout sizes, tyopgraphy from Flocab style guide
-4. base.less
+4. animations.less
+  * Animation mixin, keyframes, and custom animations
+5. base.less
   * Base app styles (headings, body, background)
-5. buttons.less
+6. buttons.less
   * Base button styles from Flocab style guide
-6. forms.less
+7. forms.less
   * Base form styles from Flocab style guide
-7. madLibForm.less
+8. madLibForm.less
   * MadLib Form View
-8. submittedMadLibs.less
+9. submittedMadLibs.less
   * Submitted Mad Lib form View
 
 
